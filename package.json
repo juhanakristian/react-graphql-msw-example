@@ -8,9 +8,11 @@
   ],
   "main": "src/index.js",
   "dependencies": {
-    "apollo-client": "2.6.10",
+    "@apollo/client": "3.3.9",
+    "css-modules": "0.3.0",
     "msw": "0.26.2",
     "react": "17.0.1",
+    "react-css-modules": "4.7.11",
     "react-dom": "17.0.1",
     "react-scripts": "4.0.0"
   },
