@@ -13,8 +13,8 @@ export const handlers = [
           name: "next-graphql-msw-example",
           description:
             "A example of using MSW to mock GraphQL API in a NextJS app",
-          __typename: "Repository",
-        },
+          __typename: "Repository"
+        }
       })
     );
   }),
@@ -22,13 +22,13 @@ export const handlers = [
     return res(
       ctx.data({
         addStar: {
-          clientMutationId: null,
+          clientMutationId: "1",
           starrable: {
             id: "MDEwOlJlcG9zaXRvcnkzMzU0MTc5Mjc=",
             stargazerCount: 2,
-            __typename: "Repository",
-          },
-        },
+            __typename: "Repository"
+          }
+        }
       })
     );
   }),
@@ -36,14 +36,14 @@ export const handlers = [
     return res(
       ctx.data({
         removeStar: {
-          clientMutationId: null,
+          clientMutationId: "2",
           starrable: {
             id: "MDEwOlJlcG9zaXRvcnkzMzU0MTc5Mjc=",
             stargazerCount: 1,
-            __typename: "Repository",
-          },
-        },
+            __typename: "Repository"
+          }
+        }
       })
     );
-  }),
+  })
 ];

@@ -57,7 +57,7 @@ const REMOVE_STAR = gql`
 export default function App() {
   const [starred, setStarred] = React.useState(false);
 
-  const { loading, error, data: queryData } = useQuery(GET_REPOSITORY, {
+  const { loading, data: queryData } = useQuery(GET_REPOSITORY, {
     variables: {
       owner: "juhanakristian",
       repository: "next-graphql-msw-example"
@@ -69,7 +69,7 @@ export default function App() {
 
   function handleClickStar(e) {
     e.preventDefault();
-    if (starred) {
+    if (!starred) {
       addStar({ starrable: { starrableId: queryData.repository.id } });
     } else {
       removeStar({ starrable: { starrableId: queryData.repository.id } });
