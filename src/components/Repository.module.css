@@ -1,0 +1,56 @@
+.star {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.star button {
+  box-shadow: 0px 0px 5px #ddd;
+  display: flex;
+  align-items: center;
+  background: #fafbfc;
+  padding: 5px;
+  padding-right: 15px;
+  height: 28px;
+  border: 1px solid grey;
+  border-right: none;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.star button:hover {
+  background: #f6f8fa;
+}
+
+.star a {
+  box-shadow: 0px 0px 5px #ddd;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-left: 1px solid grey;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  /*padding: 5px;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  cursor: pointer;
+}
+
+.star span {
+  display: flex;
+  align-items: center;
+}
+
+.star svg {
+  height: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
