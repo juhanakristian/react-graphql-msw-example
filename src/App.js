@@ -7,7 +7,7 @@ export default function App() {
   const repositories = [
     {
       owner: "juhanakristian",
-      repository: "next-graphql-msw-example",
+      repository: "react-graphql-msw-example",
     },
     {
       owner: "mswjs",

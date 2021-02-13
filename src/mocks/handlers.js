@@ -23,11 +23,11 @@ export const handlers = [
     return res(
       ctx.data({
         repository: {
-          id: "MDEwOlJlcG9zaXRvcnkzMzU0MTc5Mjc=",
+          id: "MDEwOlJlcG9zaXRvcnkzMzgxNDQwNjM=",
           stargazerCount: 1,
-          name: "next-graphql-msw-example",
+          name: "react-graphql-msw-example",
           description:
-            "A example of using MSW to mock GraphQL API in a NextJS app",
+            "A example of using MSW to mock GraphQL API in a React application",
           __typename: "Repository",
         },
       })
@@ -56,7 +56,7 @@ export const handlers = [
         addStar: {
           clientMutationId: null,
           starrable: {
-            id: "MDEwOlJlcG9zaXRvcnkzMzU0MTc5Mjc=",
+            id: "MDEwOlJlcG9zaXRvcnkzMzgxNDQwNjM=",
             stargazerCount: 2,
             __typename: "Repository",
           },
@@ -87,7 +87,7 @@ export const handlers = [
         removeStar: {
           clientMutationId: null,
           starrable: {
-            id: "MDEwOlJlcG9zaXRvcnkzMzU0MTc5Mjc=",
+            id: "MDEwOlJlcG9zaXRvcnkzMzgxNDQwNjM=",
             stargazerCount: 1,
             __typename: "Repository",
           },

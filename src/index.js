@@ -6,7 +6,7 @@ import App from "./App";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { ApolloProvider } from "@apollo/client";
 
-if (process.env.NODE_ENV === "development") {
+if (process.env.REACT_APP_API_MOCKING === "enabled") {
   const { worker } = require("./mocks/browser");
   worker.start();
 }
